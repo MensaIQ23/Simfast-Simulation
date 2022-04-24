@@ -1,0 +1,3 @@
+C:\Users\Victor Than\source\repos\Keyboard\obj\Debug\Keyboard.njsproj.AssemblyReference.cache
+C:\Users\Victor Than\source\repos\Keyboard\obj\Debug\Keyboard.njsproj.CoreCompileInputs.cache
+C:\Users\Victor Than\source\repos\Keyboard\bin\Microsoft.NodejsTools.WebRole.dll

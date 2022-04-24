@@ -1,0 +1,179 @@
+<head>
+    <style>
+        html,body {
+            padding: 0;
+            margin: 0;
+        }
+        #map {
+            position: relative;
+            height: 650px;
+            width: 50%;
+            background: url(./img/map.jpg) no-repeat;
+            background-size: 100% 100%;
+            overflow: hidden;
+        }
+        table,
+        th,
+        td {
+            padding: 5px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        .btn-group {
+            position: absolute;
+            width: 300px;
+            top: 420px;
+            left: calc(50% + 20px);
+        }
+    </style>
+
+    <title>Flights</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <!-- <link rel="shortcut icon" href="/assets/favicon.ico"> -->
+    <!-- <link rel="stylesheet" href="/assets/dcode.css"> -->
+    <link rel="stylesheet" href="keyboard/Keyboard.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+
+<body>
+    <div id="map"></div>
+    <!-- <script>
+        function initMap() {
+            var options = {
+                zoom: 11,
+                center: { lat: 39.878844, lng: -75.24019 },
+            };
+            var map = new google.maps.Map(document.getElementById('map'), options);
+        };
+    </script>
+
+    <script defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANhNCal5bctXQTJgyiELUsnLIZkFBD85o&callback=initMap">
+    </script> -->
+
+    <table style="position: absolute; top: 10px; left: calc(50% + 20px); font: bold 10px arial;">
+        <thead>
+            <tr>
+                <td>Callsign</td>
+                <td>Departure</td>
+                <td>Arrival</td>
+                <td>Altitude</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>N759CD</td>
+                <td>PHL</td>
+                <td>AUS</td>
+                <td>028</td>
+            </tr>
+            <tr>
+                <td>A475PG</td>
+                <td>PHL</td>
+                <td>YYZ</td>
+                <td>030</td>
+            </tr>
+            <tr>
+                <td>O3847LR</td>
+                <td>PHL</td>
+                <td>ABY</td>
+                <td>030</td>
+            </tr>
+            <tr>
+                <td>TWD23PS</td>
+                <td>PHL</td>
+                <td>ALB</td>
+                <td>029</td>
+            </tr>
+            <tr>
+                <td>T293R</td>
+                <td>PHL</td>
+                <td>ATH</td>
+                <td>031</td>
+            </tr>
+            <tr>
+                <td>EYU293W</td>
+                <td>BDU</td>
+                <td>PHL</td>
+                <td>033</td>
+            </tr>
+            <tr>
+                <td>TQ2123N</td>
+                <td>BPT</td>
+                <td>PHL</td>
+                <td>034</td>
+            </tr>
+            <tr>
+                <td>AH9238L</td>
+                <td>BFL</td>
+                <td>PHL</td>
+                <td>038</td>
+            </tr>
+            <tr>
+                <td>A923H</td>
+                <td>BBA</td>
+                <td>PHL</td>
+                <td>027</td>
+            </tr>
+            <tr>
+                <td>TH284N</td>
+                <td>BBK</td>
+                <td>PHL</td>
+                <td>036</td>
+            </tr>
+            <tr>
+                <td>WO0238R</td>
+                <td>BKW</td>
+                <td>BEL</td>
+                <td>031</td>
+            </tr>
+            <tr>
+                <td>W923T</td>
+                <td>BRE</td>
+                <td>BJS</td>
+                <td>041</td>
+            </tr>
+            <tr>
+                <td>Q2398Y</td>
+                <td>BRO</td>
+                <td>BKX</td>
+                <td>040</td>
+            </tr>
+            <tr>
+                <td>QP293H</td>
+                <td>BDS</td>
+                <td>BOS</td>
+                <td>025</td>
+            </tr>
+            <tr>
+                <td>UX203G</td>
+                <td>CPR</td>
+                <td>BTV</td>
+                <td>044</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="btn-group">
+        <button class="start">start</button>
+        <button class="stop">stop</button>
+        <button class="pause">pause</button>
+        <button class="resume">resume</button>
+        <button class="onex">1x</button>
+        <button class="fivex">5x</button>
+    </div>
+    <textarea class="use-keyboard-input" style="position: absolute; top: 450px; left: calc(50% + 20px); width: 300px;"></textarea>
+
+    <script src="keyboard/Keyboard.js"></script>
+
+    <script src="./js/aircraft.js"></script>
+</body>
+
+
+
+
+
+
+

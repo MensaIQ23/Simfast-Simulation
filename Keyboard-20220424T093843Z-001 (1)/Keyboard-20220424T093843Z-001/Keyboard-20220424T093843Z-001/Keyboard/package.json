@@ -1,0 +1,9 @@
+{
+  "name": "keyboard",
+  "version": "0.0.0",
+  "description": "Keyboard",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  }
+}
